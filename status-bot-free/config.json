@@ -1,0 +1,13 @@
+{
+    "token": "Your Bot Token",
+    "prefix": "/",
+    "name": "Your Server Name",
+    "color": "Your Bot Messages Color",
+    "statuschannelid": "Status Channel ID",
+    "statusmessageid": "Status Message ID",
+    "guildid": "Guild ID (Discord Server ID)",
+    "ip": "Your FiveM Server IP (Only In Number E.G: 127.0.0.1)",
+    "connectip": "https://cfx.re/join/yourservercode",
+    "tsip": "https://invite.teamspeak.com/yourserverip/"
+    
+}
