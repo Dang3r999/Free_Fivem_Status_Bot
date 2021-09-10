@@ -1,4 +1,5 @@
 FiveM Status Bot In Js,
+To run the bot use npm i 
 Server Off\On Options
 IP Command
 Easy To Config
