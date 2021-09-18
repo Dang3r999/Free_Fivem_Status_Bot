@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client;
-const {statuschannelid, statusmessageid, guildid} = require("./config.json");
+const {statuschannelid, statusmessageid} = require("./config.json");
 const ms = require('ms');
 const fs = require('fs');
 const config = require("./config.json");
@@ -27,7 +27,7 @@ client.on("ready", async () => {
     }
     const maxPlayers = await server.getMaxPlayers();
     
-    let guild = client.guilds.cache.get(guildid)
+    let guild = client.guilds.cache.get(config["guildid"])
     client.user.setActivity(`${guild.memberCount} Members | (${data.length}/${maxPlayers})`);
     let channel = client.channels.cache.get(statuschannelid)
     const space = parseInt((data.length*100)/maxPlayers)
@@ -48,7 +48,7 @@ client.on("ready", async () => {
     });
     }).catch((err) => {
     let cchannel = client.channels.cache.get(statuschannelid)
-    let gguild = client.guilds.cache.get(guildid)
+    let gguild = client.guilds.cache.get(config["guildid"])
     
     client.user.setActivity(`${gguild.memberCount} Members | (OFF)`);
     
